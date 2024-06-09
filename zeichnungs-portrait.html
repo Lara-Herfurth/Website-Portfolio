@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand">Lara Herfurth</a></li>
+                <li><a href="index.html#about">Über Mich</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-transition active"></div>
+        <section class="project-detail">
+            <h1>Project 1: Zeichnung Portrait</h1>
+            <img src="images/ZeichnungPortrait.JPG" alt="Zeichnung Portrait">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Omnis blanditiis magni quod maiores dolores! Aperiam error rerum,
+                 ut perferendis ea corrupti necessitatibus, vel dolores repudiandae,
+                  sit tempore temporibus itaque voluptatum!</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.querySelector('.page-transition');
+            setTimeout(() => {
+                transitionElement.classList.remove('active');
+            }, 500); // Duration should match the CSS transition duration
+        });
+    </script>
+</body>
+</html>
