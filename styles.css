@@ -45,7 +45,7 @@ nav ul li a {
     font-size: 1.5em;
     color: #292626;
     position: absolute;
-    left: 10%;
+    left: 11.5%;
     top: 22px;
 }
 
@@ -58,7 +58,7 @@ main {
 /* Landing Section */
 .intro {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 80px);
     overflow: hidden;
     padding: 0;
@@ -120,12 +120,16 @@ button:hover {
     padding: 40px 0;
     background-color: #292626;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .projects h2 {
     font-size: 2.5em;
-    margin-bottom: 40px;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    margin-bottom: 3%;
+    margin-top: 6%;
+    margin-left: 10%;
 }
 
 .project-row {
@@ -233,12 +237,16 @@ button:hover {
     width: 100%;
     background-color: #efebea;
     color: #292626;
-    text-align: center;
+    padding-top: 6%;
 }
 
 .contact h2 {
     font-size: 2.5em;
-    margin-bottom: 40px;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    text-align: left;
 }
 
 .contact-info {
@@ -252,7 +260,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 400px;
     height: 400px;
     padding: 20px;
 }
@@ -286,6 +294,7 @@ button:hover {
 
 .pfeil-icon{
     margin-top: 100px;
+    text-align: center;
 }
 
 .pfeil-icon img {
