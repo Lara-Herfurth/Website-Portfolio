@@ -7,38 +7,46 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f9f9f9;
+    letter-spacing: 0.1em;
+    font-weight: 100;
     overflow-x: hidden;
+    margin: 0px 0px 0px 0px;
 }
 
 header {
     background-color: #fff;
     padding: 20px 40px;
-    height: 80px;
+    height: 70px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+b {
+    padding-right: 4px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    float: right;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 7px 30px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #292626;
-    font-weight: bold;
 }
 
 .brand {
     font-size: 1.5em;
     color: #292626;
+    position: absolute;
+    left: 10%;
+    top: 22px;
 }
 
 main {
