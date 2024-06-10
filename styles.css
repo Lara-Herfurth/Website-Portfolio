@@ -10,7 +10,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f9f9f9;
     letter-spacing: 0.1em;
-    font-weight: 100;
     overflow-x: hidden;
     margin: 0px 0px 0px 0px;
 }
@@ -30,6 +29,7 @@ nav ul {
     list-style: none;
     display: flex;
     float: right;
+    margin-right: 10%;
 }
 
 nav ul li {
@@ -85,14 +85,15 @@ main {
 .intro-text h1 {
     font-size: 3em;
     color: #BF9C9E;
-    margin-bottom: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 40px;
 }
 
 .intro-text p {
     font-size: 1.2em;
     color: #292626;
-    margin-bottom: 20px;
-    line-height: 1.6; /* Increased line height */
+    margin-bottom: 30px;
+    line-height: 1.8; /* Increased line height */
 }
 
 button {
@@ -100,9 +101,11 @@ button {
     background-color: #BF9C9E;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 14px;
+    font-size: 1.1em;
     cursor: pointer;
+    padding: 12px 32px 10px 32px;
+    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
