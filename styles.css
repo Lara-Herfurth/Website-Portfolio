@@ -165,21 +165,22 @@ button:hover {
     cursor: pointer;
 }
 
-
 .project-description{
     position: absolute;
-    bottom: 10rem;
-    left: 2rem;
-    width: 70%;
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
+    top: 10%;
+    left: 8%;
+    font-size: 1.6rem;
     color: #fff;
     opacity: 0;
     visibility: hidden;
     transition: opacity .4s;
     z-index: 2;
+}
+
+#project-year{
+    color: #BF9C9E;
+    top: 5%;
+    font-size: 1.1rem;
 }
 
 .project-item:hover .project-description{
