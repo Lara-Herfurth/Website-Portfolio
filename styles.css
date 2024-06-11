@@ -16,8 +16,8 @@ body {
 
 header {
     background-color: #fff;
-    padding: 20px 40px;
-    height: 70px;
+    padding: 15px 40px;
+    height: 60px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,7 +29,7 @@ nav ul {
     list-style: none;
     display: flex;
     float: right;
-    margin-right: 10%;
+    margin-right: 200px;
 }
 
 nav ul li {
@@ -42,11 +42,11 @@ nav ul li a {
 }
 
 .brand {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #292626;
     position: absolute;
-    left: 10%;
-    top: 22px;
+    left: 210px;
+    top: 18px;
 }
 
 main {
@@ -75,7 +75,7 @@ main {
 .intro-text {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 210px;
     transform: translateY(-50%);
     padding: 20px;
     border-radius: 10px;
@@ -90,7 +90,7 @@ main {
 }
 
 .intro-text p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #292626;
     margin-bottom: 30px;
     line-height: 1.8; /* Increased line height */
@@ -102,7 +102,7 @@ main {
     color: #fff;
     border: none;
     text-decoration: none;
-    border-radius: 14px;
+    border-radius: 15px;
     font-size: 1.1em;
     cursor: pointer;
     padding: 12px 32px 10px 32px;
@@ -118,7 +118,7 @@ main {
 /* Projects Section */
 .projects {
     width: 100%;
-    padding: 40px 0;
+    padding: 30px 0;
     background-color: #292626;
     color: #fff;
     text-align: left;
@@ -130,7 +130,7 @@ main {
     letter-spacing: 0.2em;
     margin-bottom: 3%;
     margin-top: 6%;
-    margin-left: 10%;
+    margin-left: 210px;
 }
 
 .project-row {
@@ -157,12 +157,13 @@ main {
 
 .project-item {
     position: relative;
-    margin: 10px;
+    margin-left: 25px;
+    margin-bottom: -15px;
     border-radius: 10px;
     overflow: hidden; 
     opacity: 0; /* Initially hidden */
-    transform: translateY(100px); /* Start 100px below */
-    transition: all 0.6s ease-out; /* Smooth transition */
+    transform: translateY(40px); /* Start 100px below */
+    transition: all 0.5s ease-out; /* Smooth transition */
     cursor: pointer;
 }
 
@@ -200,12 +201,12 @@ main {
     height: 100%;
     background-color: #efebea;
     z-index: 100;
-    transition: top 1s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 
 .page-transition.active {
     top: 0;
-    transition: top 1s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 
 .project-item.show {
@@ -247,7 +248,7 @@ main {
     margin-top: 2%;
     color: #fff;
     width: 45%;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.8;
     font-weight: 100;
 }
@@ -286,7 +287,7 @@ main {
     font-size: 2.5em;
     font-weight: lighter;
     letter-spacing: 0.2em;
-    margin-left: 10%;
+    margin-left: 210px;
     margin-bottom: 8%;
     text-align: left;
 }
@@ -330,7 +331,7 @@ main {
 }
 
 .contact-item p {
-    font-size: 1.2em;
+    font-size: 1.3em;
 } 
 
 
