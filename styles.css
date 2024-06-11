@@ -45,7 +45,7 @@ nav ul li a {
     font-size: 1.5em;
     color: #292626;
     position: absolute;
-    left: 11.5%;
+    left: 10%;
     top: 22px;
 }
 
@@ -96,11 +96,12 @@ main {
     line-height: 1.8; /* Increased line height */
 }
 
-button {
+.button {
     padding: 10px 20px;
     background-color: #BF9C9E;
     color: #fff;
     border: none;
+    text-decoration: none;
     border-radius: 14px;
     font-size: 1.1em;
     cursor: pointer;
@@ -109,7 +110,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #C9C3C0;
 }
 
@@ -181,6 +182,7 @@ button:hover {
     color: #BF9C9E;
     top: 5%;
     font-size: 1.1rem;
+    letter-spacing: 0.2em;
 }
 
 .project-item:hover .project-description{
@@ -212,9 +214,48 @@ button:hover {
 }
 
 .project-detail {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #292626;
     color: #fff;
+}
+
+.detail-pic {
+    margin-left: 10%;
+    margin-top: 1.8%;
+    width: 28%;
+    float: left;
+}
+
+.detail-year {
+    margin-left: 42%;
+    margin-top: 5%;
+    color: #BF9C9E;
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+}
+
+.detail-headline {
+    margin-left: 42%;
+    margin-top: 0.4%;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.detail-description {
+    margin-left: 42%;
+    margin-top: 2%;
+    color: #fff;
+    width: 45%;
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+#detail-button {
+    margin-left: 4%;
+    position: absolute;
+    top: 82%;
 }
 
 .project-item img {
