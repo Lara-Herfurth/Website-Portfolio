@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand"><b>Lara</b>Herfurth</a></li>
+                <li><a href="index.html#about">ÜBER MICH</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="index.html#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-transition active"></div>
+        <section class="project-detail">
+                <img class="detail-pic" src="images/ResponsiveWebDesignDetail.jpg" alt="falscher Hase">
+                <p class="detail-year">2021</p>
+                <p class="detail-headline">Hochschulprojekt - "falscher Hase"</p>
+                <p class="detail-description">Es sollte eine responsive Landingpage entwickelt werden, 
+                    die ein Produkt in einem neuen Marken-kontext präsentiert. Ich kombinierte die 
+                    Landingpage von Lamborghini mit dem 007-Parfüm, da die maskulinen Designs gut 
+                    miteinander harmonieren. Den Prototypen habe ich in Adobe XD erstellt und die 
+                    finale Landingpage mit HTML und CSS umgesetzt. Alle Bilder der Webseite habe ich 
+                    selbst produziert.<br>Link zur Webseite:<br>
+                    https://laraherfurth.github.io/ResponsiveWebDesign/</p>
+                <a href="index.html#portfolio" type="button" class="button" id="detail-button">ZURÜCK</a></li>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.querySelector('.page-transition');
+            setTimeout(() => {
+                transitionElement.classList.remove('active');
+            }, 500); // Duration should match the CSS transition duration
+        });
+    </script>
+</body>
+</html>

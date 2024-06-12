@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand"><b>Lara</b>Herfurth</a></li>
+                <li><a href="index.html#about">ÜBER MICH</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="index.html#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-transition active"></div>
+        <section class="project-detail">
+                <img class="detail-pic" src="images/ZeichnungPortrait.JPG" alt="Kurzfilm">
+                <p class="detail-year">2020</p>
+                <p class="detail-headline">Hochschulprojekt - Kurzfilm: die Macht der Musik</p>
+                <p class="detail-description">Im Fach "AV-Produktion" haben wir einen Kurzfilm zu einem selbst 
+                    recherchierten Thema gedreht. In meiner Gruppe wurden die Rollen durchgetauscht, um alle 
+                    Bereiche kennenzulernen - von der Redaktion über den Dreh bis zur Postproduktion.<br>Der 
+                    Film thematisiert die Rolle von Musik in unserem Leben und untersucht, ob ihr Einfluss 
+                    unsere Produktivität steigern kann. Der Film wurde in Premiere Pro geschnitten und auf den 
+                    Social-Media-Kanälen der Hochschule gepostet.</p>
+                <a href="index.html#portfolio" type="button" class="button" id="detail-button">ZURÜCK</a></li>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.querySelector('.page-transition');
+            setTimeout(() => {
+                transitionElement.classList.remove('active');
+            }, 500); // Duration should match the CSS transition duration
+        });
+    </script>
+</body>
+</html>

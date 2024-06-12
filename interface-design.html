@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand"><b>Lara</b>Herfurth</a></li>
+                <li><a href="index.html#about">ÜBER MICH</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="index.html#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-transition active"></div>
+        <section class="project-detail">
+                <img class="detail-pic" src="images/InterfaceDesignDetail.jpg" alt="Smartphone-App">
+                <p class="detail-year">2022</p>
+                <p class="detail-headline">Hochschulprojekt - Prototyp einer Smartphone-App</p>
+                <p class="detail-description">In dem Hochschulfach "Interface Design" sollte eine interaktive Anwendung 
+                    zum Thema Schwarzwald entstehen. Für das Projekt habe ich einen High-Fidelity-Prototypen einer 
+                    Smartphone-Wander-App entwickelt. Zielgruppe der App sind junge Menschen, die spielerisch mehr über 
+                    die Natur und Traditionen im Schwarzwald lernen möchten.<br>Dabei kamen hauptsächlich Adobe Programme 
+                    wie XD, Illustrator und Aero für die Augmented-Reality-Funktion zum Einsatz.</p>
+                <a href="index.html#portfolio" type="button" class="button" id="detail-button">ZURÜCK</a></li>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.querySelector('.page-transition');
+            setTimeout(() => {
+                transitionElement.classList.remove('active');
+            }, 500); // Duration should match the CSS transition duration
+        });
+    </script>
+</body>
+</html>

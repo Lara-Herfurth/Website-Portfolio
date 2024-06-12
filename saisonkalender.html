@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="brand"><b>Lara</b>Herfurth</a></li>
+                <li><a href="index.html#about">ÜBER MICH</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="index.html#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-transition active"></div>
+        <section class="project-detail">
+                <img class="detail-pic" src="images/SaisonkalenderDetail.png" alt="Saisonkalender">
+                <p class="detail-year">2021</p>
+                <p class="detail-headline">Projekt im Praktikum - Saisonkalender für EcoYou</p>
+                <p class="detail-description">Während meines Praktikums bei EcoYou habe ich einen Saisonkalender designt, 
+                    der jeden Monat regionales und saisonales Obst und Gemüse zeigt. Der Kalender kann jedes Jahr 
+                    wiederverwendet werden, um Müll zu vermeiden und die Umwelt zu schonen.<br>Der Kalender wird im 
+                    Shop verkauft und ist in mehreren Formaten sowie als Geburtstagskalender erhältlich.</p>
+                <a href="index.html#portfolio" type="button" class="button" id="detail-button">ZURÜCK</a></li>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const transitionElement = document.querySelector('.page-transition');
+            setTimeout(() => {
+                transitionElement.classList.remove('active');
+            }, 500); // Duration should match the CSS transition duration
+        });
+    </script>
+</body>
+</html>
