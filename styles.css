@@ -245,7 +245,7 @@ main {
 
 /* Contact Section */
 .contact {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #efebea;
     color: #292626;
@@ -263,6 +263,7 @@ main {
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 225px;
     margin-right: 225px;
