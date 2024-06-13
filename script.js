@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('a');
+    const links = document.querySelectorAll('project-link');
     const transitionElement = document.querySelector('.page-transition');
 
     links.forEach(link => {
