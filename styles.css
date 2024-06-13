@@ -24,6 +24,17 @@ header {
     z-index: 100;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active Link Highlight */
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 b {
     padding-right: 4px;
 }
@@ -62,7 +73,7 @@ main {
 .intro {
     position: relative;
     width: 100%;
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
     overflow: hidden;
     padding: 0;
 }
