@@ -29,8 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             let target = this.getAttribute('href');
-            //ausnahme für die context menu
-
+        
             transitionElement.classList.add('active');
 
             setTimeout(() => {
