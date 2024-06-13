@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
+            if (!entry.isIntersecting) {
+                return;
             } else {
-                entry.target.classList.remove("show");
+                entry.target.classList.add("show");
+                appearOnScroll.unobserve(entry.target);
             }
         });
     }, appearOptions);
