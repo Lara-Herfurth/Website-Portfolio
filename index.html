@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html" class="brand"><b>Lara</b>Herfurth</a></li>
-                <li><a href="#about">ÜBER MICH</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">KONTAKT</a></li>
+                <li><a href="#about" class="nav-link" id="about-link">ÜBER MICH</a></li>
+                <li><a href="#portfolio" class="nav-link" id="portfolio-link">PORTFOLIO</a></li>
+                <li><a href="#contact" class="nav-link" id="contact-link">KONTAKT</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="page-transition"></div>
-        <div class="container" id="about">
-            <div class ="container-landing-page">
-                <div class="intro">
-                    <img src="images/landingPageImage.jpg" alt="Lara Herfurth" class="image">
-                    <div class="intro-text">
-                        <h1>HALLO,</h1>
-                        <p>ich bin Lara Herfurth und habe eine Leidenschaft für Design, Medien und Werbung.</p>
-                        <p>Mein Portfolio umfasst eine vielfältige Auswahl an Arbeiten aus meinem Studium, Praktikum und aus privaten Projekten. Diese illustrieren die Bandbreite meiner Kenntnisse und demonstrieren mein Können in Bereichen wie Grafikdesign, UX-Design, Prototyping und Webdesign.</p>
-                        <button class="button">LEBENSLAUF</button>
+        <div class="container">
+            <div class="page-transition"></div>
+            <section id="about">
+                <div class="container-landing-page">
+                    <div class="intro">
+                        <img src="images/landingPageImage.jpg" alt="Lara Herfurth" class="image">
+                        <div class="intro-text">
+                            <h1>HALLO,</h1>
+                            <p>ich bin Lara Herfurth und habe eine Leidenschaft für Design, Medien und Werbung.</p>
+                            <p>Mein Portfolio umfasst eine vielfältige Auswahl an Arbeiten aus meinem Studium, Praktikum
+                                und aus privaten Projekten. Diese illustrieren die Bandbreite meiner Kenntnisse und
+                                demonstrieren mein Können in Bereichen wie Grafikdesign, UX-Design, Prototyping und
+                                Webdesign.</p>
+                            <button class="button">LEBENSLAUF</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <section class="projects" id="portfolio">
                 <h2>PORTFOLIO</h2>
@@ -38,113 +45,115 @@
                     <a href="zeichnung-portrait.html" class="project-item small project-link">
                         <img src="images/ZeichnungPortrait.JPG" alt="Project 1">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2024</p>
-                            <p class="project-description">Privates Projekt -<br>Realistische<br>Zeichnung</p>
+                        <p class="project-description" id="project-year">2024</p>
+                        <p class="project-description">Privates Projekt -<br>Realistische<br>Zeichnung</p>
                     </a>
                     <a href="saisonkalender.html" class="project-item large project-link">
                         <img src="images/SaisonkalenderEcoYou.jpg" alt="Project 2">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2021</p>
-                            <p class="project-description">Projekt im<br>Praktikum -<br>Saisonkalender<br>für EcoYou</p>
+                        <p class="project-description" id="project-year">2021</p>
+                        <p class="project-description">Projekt im<br>Praktikum -<br>Saisonkalender<br>für EcoYou</p>
                     </a>
                 </div>
                 <div class="project-row" id="pullover">
                     <a href="pullover.html" class="project-item project-link">
                         <img src="images/Pullover.jpg" alt="Project 3">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2023</p>
-                            <p class="project-description">Privates Projekt -<br>Abi Pullover für<br>das Technische<br>Gymnasium</p>
-                    </a>    
+                        <p class="project-description" id="project-year">2023</p>
+                        <p class="project-description">Privates Projekt -<br>Abi Pullover für<br>das
+                            Technische<br>Gymnasium</p>
+                    </a>
                     <a href="karte.html" class="project-item project-link">
                         <img src="images/KarteEcoYou.jpg" alt="Project 4">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2021</p>
-                            <p class="project-description">Projekt im<br>Praktikum -<br>Karten für<br>EcoYou</p>
-                    </a>                   
+                        <p class="project-description" id="project-year">2021</p>
+                        <p class="project-description">Projekt im<br>Praktikum -<br>Karten für<br>EcoYou</p>
+                    </a>
                 </div>
                 <div class="project-row" id="projektstudium">
                     <a href="projektstudium.html" class="project-item project-link">
                         <img src="images/Projektstudium.jpg" alt="Project 5">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2022</p>
-                            <p class="project-description">Hochschulprojekt -<br>Webapplikation für<br>eine Immobilien-<br>verwaltung</p>
-                    </a>  
+                        <p class="project-description" id="project-year">2022</p>
+                        <p class="project-description">Hochschulprojekt -<br>Webapplikation für<br>eine
+                            Immobilien-<br>verwaltung</p>
+                    </a>
                 </div>
                 <div class="project-row" id="film">
                     <a href="kurzfilm-musik.html" class="project-item project-link">
                         <img src="images/Teaserbild.jpg" alt="Project 6">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2020</p>
-                            <p class="project-description">Hochschulprojekt -<br>Kurzfilm: die Macht<br>der Musik</p>
+                        <p class="project-description" id="project-year">2020</p>
+                        <p class="project-description">Hochschulprojekt -<br>Kurzfilm: die Macht<br>der Musik</p>
                     </a>
                     <a href="seifenverpackung.html" class="project-item project-link">
                         <img src="images/Seifenverpackung.jpg" alt="Project 7">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2021</p>
-                            <p class="project-description">Projekt im<br>Praktikum -<br>Verpackung<br>für EcoYou</p>
+                        <p class="project-description" id="project-year">2021</p>
+                        <p class="project-description">Projekt im<br>Praktikum -<br>Verpackung<br>für EcoYou</p>
                     </a>
                 </div>
                 <div class="project-row" id="responsive-web-design">
                     <a href="responsive-web-design.html" class="project-item project-link">
                         <img src="images/ResponsiveWebDesign.jpg" alt="Project 8">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2021</p>
-                            <p class="project-description">Hochschulprojekt -<br>"falscher Hase"</p>
+                        <p class="project-description" id="project-year">2021</p>
+                        <p class="project-description">Hochschulprojekt -<br>"falscher Hase"</p>
                     </a>
                     <a href="iPad-design.html" class="project-item project-link">
                         <img src="images/IPadDesign.jpg" alt="Project 9">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2024</p>
-                            <p class="project-description">Privates Projekt -<br>iPad Homescreen<br>Design</p>
+                        <p class="project-description" id="project-year">2024</p>
+                        <p class="project-description">Privates Projekt -<br>iPad Homescreen<br>Design</p>
                     </a>
                 </div>
                 <div class="project-row" id="typografie">
                     <a href="typografie.html" class="project-item project-link">
                         <img src="images/Typografie.jpg" alt="Project 10">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2023</p>
-                            <p class="project-description">Privates Projekt -<br>Illustrationen aus<br>Buchstaben</p>
+                        <p class="project-description" id="project-year">2023</p>
+                        <p class="project-description">Privates Projekt -<br>Illustrationen aus<br>Buchstaben</p>
                     </a>
                     <a href="interface-design.html" class="project-item project-link">
                         <img src="images/InterfaceDesign.jpg" alt="Project 11">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2022</p>
-                            <p class="project-description">Hochschulprojekt -<br>Prototyp einer<br>Smartphone-App</p>
+                        <p class="project-description" id="project-year">2022</p>
+                        <p class="project-description">Hochschulprojekt -<br>Prototyp einer<br>Smartphone-App</p>
                     </a>
                 </div>
                 <div class="project-row" id="film2">
                     <a href="kurzfilm-CS-LO.html" class="project-item project-link">
                         <img src="images/CS-LO.jpg" alt="Project 12">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2020</p>
-                            <p class="project-description">Hochschulprojekt -<br>animierter Kurzfilm:<br>CS-LO</p>
+                        <p class="project-description" id="project-year">2020</p>
+                        <p class="project-description">Hochschulprojekt -<br>animierter Kurzfilm:<br>CS-LO</p>
                     </a>
                     <a href="line-art.html" class="project-item project-link">
                         <img src="images/LineArt.jpg" alt="Project 13">
                         <div class="overlay"></div>
-                            <p class="project-description" id="project-year">2024</p>
-                            <p class="project-description">Privates Projekt -<br>Line Art</p>
+                        <p class="project-description" id="project-year">2024</p>
+                        <p class="project-description">Privates Projekt -<br>Line Art</p>
                     </a>
                 </div>
             </section>
-            
+
             <section class="contact" id="contact">
                 <h2>KONTAKT</h2>
                 <div class="contact-info">
                     <div class="contact-item phone">
                         <div class="contact-phone">
                             <image src="images/icons/Icon-Telefon.png">
-                                
+
                         </div>
                         <p>01573 7379959</p>
                     </div>
                     <div class="contact-item email">
                         <image src="images/icons/Icon-Mail.png">
-                        <p>laraherfurth@hotmail.de</p>
+                            <p>laraherfurth@hotmail.de</p>
                     </div>
                     <div class="contact-item address">
                         <image src="images/icons/Icon1-Adresse.png">
-                        <p>Niedere Str. 42, 78050 Villingen</p>
+                            <p>Niedere Str. 42, 78050 Villingen</p>
                     </div>
                 </div>
                 <div href="#about" class="pfeil-icon">
@@ -155,4 +164,5 @@
     </main>
     <script src="script.js"> </script>
 </body>
+
 </html>
