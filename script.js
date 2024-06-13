@@ -39,46 +39,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Custom smooth scroll function
-    function smoothScroll(target) {
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
-        const startPosition = window.scrollY;
-        const distance = targetPosition - startPosition;
-        const duration = 2000; // Adjust duration for slower scroll
-        let start = null;
+    // function smoothScroll(target) {
+    //     const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+    //     const startPosition = window.scrollY;
+    //     const distance = targetPosition - startPosition;
+    //     const duration = 2000; // Adjust duration for slower scroll
+    //     let start = null;
 
-        function step(timestamp) {
-            if (!start) start = timestamp;
-            const progress = timestamp - start;
-            const ease = progress / duration;
-            const easedPosition = ease * distance + startPosition;
+    //     function step(timestamp) {
+    //         if (!start) start = timestamp;
+    //         const progress = timestamp - start;
+    //         const ease = progress / duration;
+    //         const easedPosition = ease * distance + startPosition;
 
-            window.scrollTo(0, easedPosition);
+    //         window.scrollTo(0, easedPosition);
 
-            if (progress < duration) {
-                window.requestAnimationFrame(step);
-            }
-        }
+    //         if (progress < duration) {
+    //             window.requestAnimationFrame(step);
+    //         }
+    //     }
 
-        window.requestAnimationFrame(step);
-    }
+    //     window.requestAnimationFrame(step);
+    // }
 
 
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
+    // navLinks.forEach(link => {
+    //     link.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         const targetId = this.getAttribute('href').substring(1);
+    //         const targetSection = document.getElementById(targetId);
 
-            // Scroll to the target section smoothly
-            smoothScroll(targetSection);
+    //         // Scroll to the target section smoothly
+    //         smoothScroll(targetSection);
 
-            // Remove active class from all nav links
-            navLinks.forEach(link => link.classList.remove('active'));
-            // Add active class to the clicked nav link
-            this.classList.add('active');
-        });
-    });
+    //         // Remove active class from all nav links
+    //         navLinks.forEach(link => link.classList.remove('active'));
+    //         // Add active class to the clicked nav link
+    //         this.classList.add('active');
+    //     });
+    // });
 
     // Function to highlight nav link based on scroll position
     function highlightNavLink() {
