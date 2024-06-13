@@ -45,7 +45,7 @@ nav ul li a {
     font-size: 1.3em;
     color: #292626;
     position: absolute;
-    left: 210px;
+    left: 225px;
     top: 18px;
 }
 
@@ -59,12 +59,12 @@ main {
 .intro {
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     overflow: hidden;
     padding: 0;
 }
 
-.intro-image {
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -75,7 +75,7 @@ main {
 .intro-text {
     position: absolute;
     top: 50%;
-    left: 210px;
+    left: 205px;
     transform: translateY(-50%);
     padding: 20px;
     border-radius: 10px;
@@ -131,7 +131,7 @@ main {
     letter-spacing: 0.2em;
     margin-bottom: 3%;
     margin-top: 6%;
-    margin-left: 210px;
+    margin-left: 225px;
 }
 
 .project-row {
@@ -170,7 +170,7 @@ main {
 
 .project-description{
     position: absolute;
-    top: 10%;
+    top: 9%;
     left: 8%;
     font-size: 1.6rem;
     color: #fff;
@@ -215,51 +215,6 @@ main {
     transform: translateY(0); /* Move to original position */
 }
 
-.project-detail {
-    width: 100vw;
-    height: 100vh;
-    background-color: #292626;
-    color: #fff;
-}
-
-.detail-pic {
-    margin-left: 10%;
-    margin-top: 1.8%;
-    width: 28%;
-    float: left;
-}
-
-.detail-year {
-    margin-left: 42%;
-    margin-top: 5%;
-    color: #BF9C9E;
-    letter-spacing: 0.2em;
-    font-size: 1.1rem;
-}
-
-.detail-headline {
-    margin-left: 42%;
-    margin-top: 0.4%;
-    color: #fff;
-    font-size: 1.6rem;
-}
-
-.detail-description {
-    margin-left: 42%;
-    margin-top: 2%;
-    color: #fff;
-    width: 45%;
-    font-size: 1.3em;
-    line-height: 1.8;
-    font-weight: 100;
-}
-
-#detail-button {
-    margin-left: 4%;
-    position: absolute;
-    top: 82%;
-}
-
 .project-item img {
     width: 100%;
     height: 100%;
@@ -288,15 +243,16 @@ main {
     font-size: 2.5em;
     font-weight: lighter;
     letter-spacing: 0.2em;
-    margin-left: 210px;
+    margin-left: 225px;
     margin-bottom: 8%;
     text-align: left;
 }
 
 .contact-info {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    margin-left: 225px;
+    margin-right: 225px;
 }
 
 .contact-item {
@@ -304,9 +260,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
+    width: 450px;
+    height: 450px;
 }
 
 .contact-item.phone {
@@ -346,3 +301,53 @@ main {
     height: auto;
     margin-bottom: 10px; 
 }
+
+
+/*detailview*/
+
+.detail-img-text{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #292626;
+    height: calc(100vh - 60px);
+    width: 100vw;
+}
+
+.detail-img {
+    margin-left: 225px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    min-width: fit-content;
+}
+
+.detail-text {
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.detail-year {
+    color: #BF9C9E;
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+}
+
+.detail-headline {
+    margin-top: 0.5%;
+    color: #fff;
+    width: 75%;
+    font-size: 1.6rem;
+}
+
+.detail-description {
+    margin-top: 3%;
+    color: #fff;
+    width: 75%;
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+#detail-button {
+    position: absolute;
+    top: 85%;
+}
+

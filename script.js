@@ -30,12 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             let target = this.getAttribute('href');
+            //ausnahme für die context menu
 
             transitionElement.classList.add('active');
 
             setTimeout(() => {
                 window.location.href = target;
-            }, 1000); // Duration should match the CSS transition duration
+            }, 500); // Duration should match the CSS transition duration
         });
     });
 });
