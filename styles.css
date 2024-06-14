@@ -247,6 +247,9 @@ main {
 
 /* Contact Section */
 .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100vw;
     height: 100vh;
     background-color: #efebea;
@@ -306,14 +309,14 @@ main {
     font-size: 1.3em;
 } 
 
-
-.pfeil-icon{
-    margin-top: 100px;
-    text-align: center;
-}
-
 .pfeil-icon img {
     width: 70px; 
     height: auto;
-    margin-bottom: 10px; 
+}
+
+    
+.pfeil-icon {
+    bottom: 20px;
+    cursor: pointer;
+    text-align: center;
 }
