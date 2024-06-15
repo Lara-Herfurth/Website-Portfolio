@@ -154,3 +154,24 @@ main {
     position: absolute;
     top: 85%;
 }
+
+
+.link {
+    color: #BF9C9E;
+    font-size: 1.1rem;
+}
+
+.detail-video {
+    margin-left: 225px;
+    margin-top: 5.2%;
+    margin-bottom: 23%;
+    min-width: fit-content;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+}
