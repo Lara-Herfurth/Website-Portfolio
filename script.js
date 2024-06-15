@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const links = document.querySelectorAll('.project-link');
     const transitionElement = document.querySelector('.page-transition');
+    const scrollToTopButton = document.querySelector('.pfeil-icon');
+
+    // Smooth scrolling to top for the button
+    scrollToTopButton.addEventListener('click', function() {
+        document.documentElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+
 
     links.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -19,8 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },500); // Duration should match the CSS transition duration
         });
     });
-
-    
 
     const appearOptions = {
         threshold: 0.1,
