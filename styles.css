@@ -31,7 +31,7 @@ html {
 /* Active Link Highlight */
 .nav-link.active {
     font-weight: bold;
-    text-decoration: underline;
+    color: #292626;
 }
 
 
@@ -43,7 +43,7 @@ nav ul {
     list-style: none;
     display: flex;
     float: right;
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 nav ul li {
@@ -52,7 +52,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #292626;
+    color: #737373;
 }
 
 .logo {
@@ -67,7 +67,7 @@ nav ul li a {
     color: #292626;
     position: absolute;
     left: 220px;
-    top: 20px;
+    top: 19px;
 }
 
 main {
@@ -98,6 +98,14 @@ main {
     object-fit: cover;
     display: block;
     padding: 0;
+}
+
+.image-tablet {
+    display: none;
+}
+
+.image-phone {
+    display: none;
 }
 
 .intro-text {
@@ -165,7 +173,7 @@ main {
 .project-row {
     display: flex;
     justify-content: space-between;
-    margin: 40px 200px 40px 200px; 
+    margin: 40px 225px 40px 200px; 
 }
 
 .overlay {
@@ -278,7 +286,6 @@ main {
     font-weight: lighter;
     letter-spacing: 0.2em;
     margin-left: 225px;
-    margin-bottom: 8%;
     text-align: left;
 }
 
@@ -295,15 +302,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25vw;
-    height: 50vh;
+    width: 24vw;
+    height: 47vh;
 }
 
 .contact-item.phone {
     background-color: #BF9C9E;
     color: #292626;
 }
-
 
 .contact-item.email {
     background-color: #fff;
@@ -316,13 +322,15 @@ main {
 }
 
 .contact-item img {
-    width: 50px; /* Set the width of the icons */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space between icon and text */
+    width: 150px; 
+    height: auto; 
+    margin-top: 10%;
+    
 }
 
 .contact-item p {
     font-size: 1.3em;
+    margin-bottom: 20%;
 } 
 
 .pfeil-icon img {
@@ -335,4 +343,425 @@ main {
     bottom: 20px;
     cursor: pointer;
     text-align: center;
+}
+
+/* big/medium Desktop */
+
+@media only screen and (max-width: 1700px) {
+
+    header {
+        padding: 15px 40px;
+        height: 52px;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        margin-right: 115px;
+    }
+
+    nav ul li {
+        margin: 4px 22px;
+    }
+
+    .brand {
+        font-size: 1.2em;
+        left: 180px;
+        margin-top: -3px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: -11px;
+        left: 130px;
+    }
+
+    .intro-text {
+        left: 160px;
+    }
+    
+    .intro-text h1 {
+        font-size: 2em;
+    }
+    
+    .intro-text p {
+        font-size: 1.1em;
+    }
+    
+    .button {
+        border-radius: 12px;
+        font-size: 0.9em;
+        padding: 12px 22px 10px 22px;
+    }
+
+    .project-row {
+        margin: 40px 180px 40px 155px; 
+    }
+    
+    .projects h2 {
+        font-size: 2em;
+        margin-left: 180px;
+    }
+
+    .project-description{
+        top: 9%;
+        font-size: 1.4rem;
+    }
+    
+    #project-year{
+        font-size: 0.9rem;
+    }
+
+    .contact h2 {
+        font-size: 2em;
+        margin-left: 180px;
+    }
+
+    .contact-item {
+        width: 23vw;
+        height: 38vh;
+    }
+
+    .contact-item img {
+        width: 100px;   
+    }
+
+    .contact-item p {
+        font-size: 1.1em;
+        text-align: center;
+    } 
+
+    .contact-info {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .pfeil-icon img {
+        width: 55px; 
+    }
+}
+
+/* big Tablet / Laptop */
+
+@media only screen and (max-width: 1200px) {
+    
+    header {
+        padding: 12px;
+        height: 42px;
+        font-size: 0.72em;
+    }
+
+    nav ul {
+        margin-right: 120px;
+    }
+
+    nav ul li {
+        margin: 4px 15px;
+    }
+
+    .brand {
+        font-size: 1.3em;
+        left: 150px;
+        margin-top: -6px;
+    }
+
+    .logo {
+        width: 35px;
+        margin-top: -11px;
+        left: 106px;
+    }
+
+    .intro-text {
+        left: 130px;
+    }
+    
+    .intro-text h1 {
+        font-size: 1.6em;
+    }
+    
+    .intro-text p {
+        font-size: 0.9em;
+    }
+    
+    .button {
+        border-radius: 10px;
+        font-size: 0.72em;
+        padding: 10px 18px 8px 18px;
+    }
+
+    .project-row {
+        margin: 40px 150px 40px 125px; 
+    }
+    
+    .projects h2 {
+        font-size: 1.6em;
+        margin-left: 150px;
+    }
+
+    .project-description{
+        top: 10%;
+        font-size: 1rem;
+    }
+    
+    #project-year{
+        font-size: 0.72rem;
+    }
+
+    .contact h2 {
+        font-size: 1.6em;
+        margin-left: 150px;
+    }
+
+    .contact-item {
+        width: 22.8vw;
+        height: 40vh;
+    }
+
+    .contact-item img {
+        width: 90px;   
+    }
+
+    .contact-item p {
+        font-size: 0.9em;
+    } 
+
+    .contact-info {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .pfeil-icon img {
+        width: 45px; 
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 992px) {
+    
+    header {
+        padding: 15px 40px;
+        height: 52px;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        margin-right: 10px;
+    }
+
+    nav ul li {
+        margin: 4px 22px;
+    }
+
+    .brand {
+        font-size: 1.2em;
+        left: 80px;
+        margin-top: -3px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: -11px;
+        left: 22px;
+    }
+
+    .intro-text {
+        left: 60px;
+        top: 30%;
+    }
+    
+    .intro-text h1 {
+        font-size: 2em;
+        width: 170%;
+    }
+    
+    .intro-text p {
+        font-size: 1.1em;
+        width: 170%;
+    }
+    
+    .button {
+        border-radius: 12px;
+        font-size: 0.9em;
+        padding: 12px 22px 10px 22px;
+    }
+
+    .image{
+        display: none;
+    }
+    
+    .image-tablet {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        padding: 0;
+    }
+
+    .image-phone{
+        display: none;
+    }
+    
+    .project-row {
+        margin: 40px 75px 40px 55px; 
+    }
+    
+    .projects h2 {
+        font-size: 1.6em;
+        margin-left: 80px;
+    }
+
+    .project-item:hover .project-description{
+        opacity: 0;
+    }
+
+    .contact {
+        height: 50vh;
+    }
+
+    .contact h2 {
+        font-size: 1.6em;
+        margin-left: 80px;
+    }
+
+    .contact-item {
+        width: 26vw;
+        height: 20vh;
+    }
+
+    .contact-item img {
+        width: 90px;   
+    }
+
+    .contact-item p {
+        font-size: 0.9em;
+    } 
+
+    .contact-info {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .pfeil-icon img {
+        width: 45px; 
+    }
+}
+
+/* small Tablet */
+
+@media only screen and (max-width: 768px) {
+
+    .intro-text {
+        left: 60px;
+        top: 35%;
+    }
+    
+    .contact-item {
+        width: 24vw;
+        height: 20vh;
+    }
+
+    .contact-item p {
+        font-size: 0.72em;
+    } 
+}
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+    
+    header {
+        height: 55px;
+    }
+
+    #about-link {
+        display: none;
+    }
+
+    #portfolio-link {
+        display: none;
+    }
+
+    #contact-link {
+        display: none;
+    }
+
+    .brand {
+        font-size: 1.4em;
+        left: 37%;
+        margin-top: -2px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: -9px;
+        left: 25%;
+    }
+
+    .intro-text {
+        left: 20px;
+        top: 33%;
+    }
+    
+    .intro-text h1 {
+        font-size: 1.6em;
+        width: 260%;
+        margin-bottom: 25px;
+    }
+    
+    .intro-text p {
+        font-size: 0.9em;
+        width: 280%;
+        margin-bottom: 20px;
+    }
+    
+    .button {
+        padding: 12px 20px 10px 20px;
+    }   
+
+    .image{
+        display: none;
+    }
+    
+    .image-tablet {
+        display: none;
+    }
+
+    .image-phone{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        padding: 0;
+    }
+
+    .intro-img {
+        margin-left: 0px;
+    }
+
+    .projects h2 {
+        font-size: 1.5em;
+        margin-left: 40px;
+    }
+
+    .project-row {
+        margin: 20px 37px 40px 15px;
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+    .contact h2 {
+        font-size: 1.5em;
+        margin: 12px 40px 5px;
+    }
+
+    .contact-item {
+        width: 70vw;
+        height: 22vh;
+    }
+
+    .pfeil-icon img {
+        margin-bottom: -30px; 
+    }
 }

@@ -11,6 +11,7 @@ body {
     letter-spacing: 0.1em;
     overflow-x: hidden;
     margin: 0px 0px 0px 0px;
+    background-color: #292626;
 }
 
 header {
@@ -28,7 +29,7 @@ nav ul {
     list-style: none;
     display: flex;
     float: right;
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 nav ul li {
@@ -37,7 +38,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #292626;
+    color: #737373;
 }
 
 .logo {
@@ -52,7 +53,7 @@ nav ul li a {
     color: #292626;
     position: absolute;
     left: 220px;
-    top: 18px;
+    top: 19px;
 }
 
 main {
@@ -111,8 +112,8 @@ main {
 
 .detail-img-text{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    background-color: #292626;
     height: calc(100vh - 60px);
     width: 100vw;
 }
@@ -122,6 +123,14 @@ main {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     min-width: fit-content;
+}
+
+#img-desktop {
+    display: block;
+}
+
+#img-mobile {
+    display: none;
 }
 
 .detail-text {
@@ -138,14 +147,14 @@ main {
 .detail-headline {
     margin-top: 0.5%;
     color: #fff;
-    width: 75%;
+    margin-right: 225px;
     font-size: 1.6rem;
 }
 
 .detail-description {
     margin-top: 3%;
     color: #fff;
-    width: 75%;
+    margin-right: 225px;
     font-size: 1.3em;
     line-height: 1.8;
 }
@@ -154,7 +163,6 @@ main {
     position: absolute;
     top: 85%;
 }
-
 
 .link {
     color: #BF9C9E;
@@ -174,4 +182,295 @@ main {
     object-fit: cover;
     display: block;
     padding: 0;
+}
+
+
+/* big/medium Desktop */
+
+@media only screen and (max-width: 1700px) {
+
+    header {
+        padding: 15px 40px;
+        height: 52px;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        margin-right: 115px;
+    }
+
+    nav ul li {
+        margin: 4px 22px;
+    }
+
+    .brand {
+        font-size: 1.2em;
+        left: 180px;
+        margin-top: -3px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: -11px;
+        left: 130px;
+    }
+
+    .detail-img-text{
+        height: calc(100vh - 52px);
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .detail-img {
+        margin-left: 180px;
+    }
+
+    .detail-year {
+        font-size: 0.9rem;
+    }
+    
+    .detail-headline {
+        margin-right: 180px;
+        font-size: 1.4rem;
+    }
+    
+    .detail-description {
+        margin-top: 3%;
+        margin-right: 180px;
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+    
+    .link {
+        font-size: 0.9rem;
+    }
+    
+    .detail-video {
+        margin-left: 180px;
+    }
+
+    .button {
+        border-radius: 12px;
+        font-size: 0.9em;
+        padding: 12px 22px 10px 22px;
+    }
+}
+
+
+/* big Tablet / Laptop */
+
+@media only screen and (max-width: 1200px) {
+
+    header {
+        padding: 12px;
+        height: 42px;
+        font-size: 0.72em;
+    }
+
+    nav ul {
+        margin-right: 120px;
+    }
+
+    nav ul li {
+        margin: 4px 15px;
+    }
+
+    .brand {
+        font-size: 1.3em;
+        left: 150px;
+        margin-top: -6px;
+    }
+
+    .logo {
+        width: 35px;
+        margin-top: -11px;
+        left: 106px;
+    }
+
+    .detail-img-text{
+        height: calc(100vh - 42px);
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .detail-img {
+        margin-left: 130px;
+    }
+
+    .detail-year {
+        font-size: 0.72rem;
+    }
+    
+    .detail-headline {
+        margin-right: 130px;
+        font-size: 1rem;
+    }
+    
+    .detail-description {
+        margin-right: 130px;
+        font-size: 0.9rem;
+    }
+    
+    .link {
+        font-size: 0.72rem;
+    }
+    
+    .detail-video {
+        margin-left: 130px;
+    }
+
+    .button {
+        border-radius: 10px;
+        font-size: 0.72rem;
+        padding: 10px 18px 8px 18px;
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (max-width: 992px) {
+
+    header {
+        padding: 15px 40px;
+        height: 52px;
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        margin-right: 10px;
+    }
+
+    nav ul li {
+        margin: 4px 22px;
+    }
+
+    .brand {
+        font-size: 1.2em;
+        left: 80px;
+        margin-top: -3px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: -11px;
+        left: 22px;
+    }
+
+    .detail-img-text {
+        justify-content: flex-start;
+        flex-direction: column;
+        height: calc(100vh - 52px);
+    }
+
+    .detail-img {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 10px;
+    }
+
+    #img-desktop {
+        display: none;
+    }
+
+    #img-mobile {
+        display: block;
+    }
+
+    .detail-text {
+        margin-left: 80px;
+        margin-right: -45px;
+        margin-top: 10px;
+    }
+
+    .detail-year {
+        font-size: 0.9rem;
+    }
+
+    .detail-headline {
+        font-size: 1.3rem;
+    }
+
+    .detail-description {
+        font-size: 1.1rem;
+    }
+
+    .link {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        margin-top: 50px;
+    }
+
+    .detail-video {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 0px;
+    }
+}
+
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        height: 55px;
+    }
+
+    #about-link, #portfolio-link, #contact-link {
+        display: none;
+    }
+
+    .brand {
+        font-size: 1.4em;
+        left: 37%;
+        margin-top: -2px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: -9px;
+        left: 25%;
+    }
+
+    .detail-img-text {
+        height: calc(100vh - 55px);
+    }
+
+    .detail-img {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+
+    .detail-text {
+        margin-left: 40px;
+        margin-right: -95px;
+        margin-top: 10px;
+    }
+
+    .detail-year {
+        font-size: 0.8rem;
+    }
+
+    .detail-headline {
+        font-size: 1.2rem;
+    }
+
+    .detail-description {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.72rem;
+        margin-top: 50px;
+    }
+
+    .detail-video {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
