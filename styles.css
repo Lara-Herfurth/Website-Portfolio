@@ -764,4 +764,8 @@ main {
     .pfeil-icon img {
         margin-bottom: -30px; 
     }
+
+    .contact-item p {
+        font-size: 0.9em;
+    } 
 }
