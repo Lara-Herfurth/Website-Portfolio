@@ -128,7 +128,7 @@ main {
 .intro-text p {
     font-size: 1.3em;
     color: #292626;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     line-height: 1.8; /* Increased line height */
 }
 
@@ -711,7 +711,7 @@ main {
     .intro-text p {
         font-size: 0.9em;
         width: 280%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     
     .button {
