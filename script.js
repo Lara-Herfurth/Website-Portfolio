@@ -20,13 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             let target = this.getAttribute('href');
-        
+
             transitionElement.classList.add("active");
 
             setTimeout(() => {
                 window.location.href = target;
             },500); // Duration should match the CSS transition duration
         });
+    });
+
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            transitionElement.classList.remove('active');
+        }
     });
 
     const appearOptions = {
